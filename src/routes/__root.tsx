@@ -12,7 +12,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import { SiteHeader, SiteFooter, MobileCTA } from "@/components/site/Layout";
+import { SiteHeader, SiteFooter, MobileCTA, DemoWatermark } from "@/components/site/Layout";
 
 function NotFoundComponent() {
   return (
@@ -127,6 +127,7 @@ function RootComponent() {
       </main>
       <SiteFooter />
       <MobileCTA />
+      <DemoWatermark />
     </QueryClientProvider>
   );
 }

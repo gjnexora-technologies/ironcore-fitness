@@ -103,6 +103,20 @@ export function MobileCTA() {
   );
 }
 
+export function DemoWatermark() {
+  return (
+    <div
+      aria-label="GJ Nexora demo project"
+      className="pointer-events-none fixed bottom-20 right-3 z-50 inline-flex items-center gap-2 rounded-full border border-border bg-background/90 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wide text-foreground shadow-lg backdrop-blur sm:bottom-4 sm:right-4"
+    >
+      <span className="h-1.5 w-1.5 rounded-full bg-primary" aria-hidden />
+      <span>GJ Nexora</span>
+      <span className="text-muted-foreground" aria-hidden>•</span>
+      <span className="text-primary">Demo Project</span>
+    </div>
+  );
+}
+
 export function Reveal({ children, className = "", delay = 0 }: { children: ReactNode; className?: string; delay?: number }) {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
